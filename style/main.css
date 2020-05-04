@@ -660,7 +660,7 @@ hr {
     width: 50%;
     top: 30%;
     left: 20%;
-    background-color: #8c0000;
+    background-color: #000000;
     border-radius: 5px;
     text-align: center;
     padding: 20px;
@@ -693,7 +693,7 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #626d84;
+    background: #61a9d2;
     border-radius: 6px;
     width: 280px;
     height: 280px;
