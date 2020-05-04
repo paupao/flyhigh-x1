@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048 X1</title>
+
+  <link href="style-pdx101/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="description" content="Like the classic 2048 game, but with X1 version. Can you get to the Hidden Photos?" />
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<style type="text/css">
+
+.snow-bg {
+   content: '';
+   display: block;
+   position: fixed;
+   z-index: 5;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   pointer-events: none;
+   background-image: url('assets/fallin-flower/sakura-1-1.png'), url('assets/fallin-flower/sakura-2.png');
+    opacity: 0.50;
+    animation: snow 20s linear infinite;
+}
+
+@keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+ 100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+@media (max-width: 768px) {
+    .woocommerce ul.products li.product, 
+    .woocommerce-page ul.products li.product, 
+    .woocommerce-page[class*=columns-] ul.products li.product,
+    .woocommerce[class*=columns-] ul.products li.product {
+        width: 100%;
+        float: left;
+        clear: both;
+        margin: 0 7em;
+    }
+}
+</style>
+<body>
+  <div class="snow-bg">
+  </div>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048<br>X1</h1>
+      <div class="scores-container">
+        <div class="best-container">0</div>
+        <div style="width: 100%;height: 5px;"></div>
+        <div class="score-container">0</div>
+      </div>
+    </div>
+
+    <div style="width: 100%;height: 8px;"></div>
+
+    <div class="above-game">
+      <p class="game-intro">Join tiles to get from the Genius Boy <strong>NAM DOHYON</strong> to our leader <strong>HAN SEUNGWOO</strong>!</p>
+      <br>
+      <div class="restart-button-clone">New Game</div>
+      <a class="restart-button" style="display: none;">New Game</a>
+    </div>
+
+    <div style="width: 100%;height: 60px;"></div>
+    <div class="game-notice" id="top">
+      <iframe id="playerID" width="100%" src="https://www.youtube-nocookie.com/embed/LlQEKB2H7z4?wmode=transparent&controls=0&loop=1&playlist=LlQEKB2H7z4" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+      <font style="font-size: 11px; line-height: 5px;">Don't forget to stream <a href="https://youtu.be/LlQEKB2H7z4" target="_blank">FLASH</a> (link opens in a new tab/youtube app).</font>
+    </div>
+
+    <div style="width: 100%;height: 30px;"></div>
+
+    <div>
+      <div style="float: right;display: inline-block;font-size: 11px">
+        MODE |&nbsp;
+        <a href="index.html" style="color: #627290;text-decoration: none;">Quantum Leap</a>&nbsp;
+        <a href="" style="color: #F6CAC9;background-color: #627290;text-decoration: none;padding: 10px;border-radius: 3px;">PDX101</a>&nbsp;
+        <a href="bisang.html" style="color: #627290;text-decoration: none;">Bisang</a>&nbsp;
+    </div>
+
+    <div style="width: 100%;height: 25px;"></div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <div class="black-overlay" id="overlay-id"></div>
+    <div class="new_game prompt" id="prompt-id" style="color: white;display: none;">
+      <h3>START A NEW GAME?</h3> <br>
+      <div style="width: 30%;height: 20%;display: inline-block;"> 
+        <button class="prompt-button" id="start-yes" style="background-color:rgb(10,10,10);color: white">YES</button>
+      </div>
+      <div style="width: 65%;height: 20%;display: inline-block;"> 
+        <button class="prompt-button" id="start-no" style="background-color:#e4b0af">KEEP PLAYING</button>
+      </div>
+    </div>
+
+
+    <!-- <div class="game-notice" style="background-color: #415786;color: #C9DDA2;font-weight: 600">
+    One Its! I wanna see your tweets, please use #X12048 / #2048X1 and don't forget to tag @x1official101 @x1members :)</div> -->
+
+     <div style="float: right; display: inline-block;font-size: 12px;letter-spacing: 1px;font-weight: 650;padding-top: 7px;">
+         #X12048 | #2048X1
+    </div>
+    <!-- <div style="float: left; display: inline-block;font-size: 12px;letter-spacing: 1px;font-weight: 650;padding-top: 7px;">
+         PLEASE ANSWER POLL BELOW
+    </div> -->
+
+    <div style="width: 100%; height: 25px;"></div>
+
+    <!--   <span style="width: 100%;background-color: #415786;color: #C9DDA2;font-size: 12px;padding: 8px; padding-left: 22px;padding-right: 22px;">please answer poll below:</span>
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">carats do u know how to play solitaire?</p>&mdash; LANA (@lemonadecoups) <a href="https://twitter.com/lemonadecoups/status/1252882890951548928?ref_src=twsrc%5Etfw">April 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. Keep merging members 'til you get to <strong>X1'S LEADER!</strong>
+    </p>
+    <hr style="border-color:#415786">
+    <p>
+    <strong class="important">SEVENTEEN MEMBERS: </strong> SEUNGWOO | SEUNGYOUN | WOOSEOK | YOHAN | HANGYUL | JUNHO | DONGPYO | MINHEE | EUNSANG | HYEONGJUN | DOHYON
+    </p>
+    <hr style="border-color:#415786">
+    <p>
+    Created by : <a href="https://twitter.com/ddongpao" target="_blank">ddongpao</a> on twitter. A variant of <a href="https://github.com/lemonadexx/play-seventeen" target="_blank">lemonadexx's 2048 SVT Vers.</a>.
+    </p>
+
+
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js-members/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js-members/application.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+  $(".restart-button-clone").click(function() {
+    $(".black-overlay").show();
+    $(".new_game.prompt").show();    
+  });
+
+  $("#start-no").click(function(){
+    $(".black-overlay").hide();
+    $(".new_game.prompt").hide();    
+  });
+</script>
