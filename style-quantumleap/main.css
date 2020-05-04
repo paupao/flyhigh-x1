@@ -17,7 +17,7 @@ body {
 
   .restart-button {
   display: inline-block;
-  background: #f6cac9;
+  background: #c9dda2;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
@@ -70,7 +70,7 @@ body {
     width: 50%;
     top: 30%;
     left: 20%;
-    background-color: #000000;
+    background-color: #61a9d2;
     border-radius: 5px;
     text-align: center;
     padding: 20px;
