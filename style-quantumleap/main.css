@@ -2,8 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #131212;
-  color: #f6cac9;
+  background: #415786;
+  color: #c9dda2;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
@@ -21,7 +21,7 @@ body {
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #131212;
+  color: #415786;
   height: 40px;
   line-height: 42px;
   display: block;
@@ -31,11 +31,11 @@ body {
   .restart-button-clone {
   cursor: pointer;
   display: inline-block;
-  background: #f6cac9;
+  background: #c9dda2;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #131212;
+  color: #415786;
   height: 40px;
   line-height: 42px;
   display: block;
@@ -43,7 +43,7 @@ body {
   float: right; }
 
 .game-notice {
-  background: #DDB133;
+  background: #61a9d2;
   margin-top: 15px;
   border-radius: 3px;
   padding: 15px;
@@ -70,7 +70,7 @@ body {
     width: 50%;
     top: 30%;
     left: 20%;
-    background-color: #DDB133;
+    background-color: #61a9d2;
     border-radius: 5px;
     text-align: center;
     padding: 20px;
@@ -134,14 +134,14 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #f6cac9;
+  background: #c9dda2;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
   font-weight: bold;
   border-radius: 3px;
-  color: #131212;
+  color: #415786;
   margin-top: 8px;
   text-align: center; }
   .score-container:after, .best-container:after {
@@ -153,7 +153,7 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #131212; }
+    color: #415786; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -182,7 +182,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: #61a9d2;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -192,7 +192,7 @@ strong.important {
 
 hr {
   border: none;
-  border-bottom: 1px solid #d8d4d0;
+  border-bottom: 1px solid #c9dda2;
   margin-top: 20px;
   margin-bottom: 30px; }
 
@@ -468,13 +468,13 @@ hr {
   transition-property: transform; }
   .tile .tile-inner {
     border-radius: 3px;
-    background: #131212;
+    background: #415786;
     text-align: center;
     font-weight: bold;
     z-index: 10;
     font-size: 49.5px; }
   .tile.tile-2 .tile-inner {
-    background: #131212;
+    background: #415786;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
     background: #ede0c8;
