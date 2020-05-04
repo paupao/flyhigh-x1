@@ -2,8 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #627290;
-  color: #F6CAC9;
+  background: #415786;
+  color: #c9dda2;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
@@ -31,7 +31,7 @@ body {
     width: 50%;
     top: 30%;
     left: 20%;
-    background-color: #DDB133;
+    background-color: #61a9d2;
     border-radius: 5px;
     text-align: center;
     padding: 20px;
@@ -92,14 +92,14 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #f6cac9;
+  background: #c9dda2;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
   font-weight: bold;
   border-radius: 3px;
-  color: #627290;
+  color: #415786;
   margin-top: 8px;
   text-align: center; }
   .score-container:after, .best-container:after {
@@ -111,7 +111,7 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #627290; }
+    color: #415786; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -140,7 +140,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #F6CAC9;
+  color: #c9dda2;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -150,7 +150,7 @@ strong.important {
 
 hr {
   border: none;
-  border-bottom: 1px solid #d8d4d0;
+  border-bottom: 1px solid #c9dda2;
   margin-top: 20px;
   margin-bottom: 30px; }
 
@@ -188,7 +188,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #626d84;
+  background: #61a9d2;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -222,7 +222,7 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #627290;
+      background: #415786;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -558,11 +558,11 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: #F6CAC9;
+  background: #c9dda2;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #627290;
+  color: #415786;
   height: 40px;
   line-height: 42px;
   display: block;
@@ -572,11 +572,11 @@ hr {
   .restart-button-clone {
     cursor: pointer;
   display: inline-block;
-  background: #F6CAC9;
+  background: #c9dda2;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #627290;
+  color: #415786;
   height: 40px;
   line-height: 42px;
   display: block;
@@ -660,7 +660,7 @@ hr {
     width: 50%;
     top: 30%;
     left: 20%;
-    background-color: #DDB133;
+    background-color: #8c0000;
     border-radius: 5px;
     text-align: center;
     padding: 20px;
@@ -869,6 +869,6 @@ hr {
     height: 30px !important;
     line-height: 30px !important;
     margin-top: 90px !important;
-    color: #627290; }
+    color: #415786; }
   .game-message .lower {
     margin-top: 30px !important; } }
