@@ -140,7 +140,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #c9dda2;
+  color: #000000;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -660,7 +660,7 @@ hr {
     width: 50%;
     top: 30%;
     left: 20%;
-    background-color: #000000;
+    background-color: #DDB133;
     border-radius: 5px;
     text-align: center;
     padding: 20px;
