@@ -182,7 +182,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #bc0000;
+  color: #000000;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -229,7 +229,7 @@ hr {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  background: #000000;
+  background: #c9dda2;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -740,7 +740,7 @@ hr {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    background: #000000;
+    background: #c9dda2;
     border-radius: 6px;
     width: 300px;
     height: 300px;
