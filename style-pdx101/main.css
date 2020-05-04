@@ -43,7 +43,7 @@ body {
   float: right; }
 
 .game-notice {
-  background: #DDB133;
+  background: #61a9d2;
   margin-top: 15px;
   border-radius: 3px;
   padding: 15px;
@@ -70,7 +70,7 @@ body {
     width: 50%;
     top: 30%;
     left: 20%;
-    background-color: #DDB133;
+    background-color: #000000;
     border-radius: 5px;
     text-align: center;
     padding: 20px;
@@ -229,7 +229,7 @@ hr {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  background: #e8b5b4;
+  background: #7988a8;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -629,7 +629,7 @@ hr {
     width: 50%;
     top: 30%;
     left: 20%;
-    background-color: #DDB133;
+    background-color: #000000;
     border-radius: 5px;
     text-align: center;
     padding: 20px;
@@ -676,7 +676,7 @@ hr {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    background: #e8b5b4;
+    background: #7988a8;
     border-radius: 6px;
     width: 280px;
     height: 280px;
